@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://portal.ukcloud.com/api/authenticate
+    body:
+      encoding: UTF-8
+      string: '{"email":"tlawrence@somedomain.com","password":"password1234"}'
+    headers:
+      User-Agent:
+      - fog-core/1.43.0
+      Accept:
+      - application/xml
+  response:
+    status:
+      code: 401
+      message: 
+    headers:
+      Connection:
+      - close
+      Set-Cookie:
+      - rack.session=DUMMYBAh7B0kiD3Nlc3Npb25faWsdfhrZFVEkiRTM0YjAzYmVkZGJlNjc3NTYwODky%0AY2U4YzllNWUzYjM3ZjJjYjI5ZWFkMzBsdffdfsWMwOTg2MTc5YWI1NTRmNWEG%0AOwBGSSIMdXNlfdsZAY7AEZpAvkB%0A--691ce0965f6e0e5ad9fsddca271f2ba5e43fsd57e;
+        path=/api; expires=Wed, 12-Oct-2016 10:51:49 GMT; HttpOnly; secure, _session_id=34b03beddbe6775fsd2ce8c9e5e3b37f2cbfds0a4fdec0986asdaf5a;
+        path=/api; expires=Wed, 12-Oct-2016 10:51:49 GMT; HttpOnly; secure
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="UTF-8"?><error>Skyscape Proxy 401.</error>
+    http_version: 
+  recorded_at: Tue, 11 Oct 2016 16:07:17 GMT
+- request:
+    method: post
+    uri: https://portal.skyscapecloud.com/api/authenticate
+    body:
+      encoding: UTF-8
+      string: '{"email":"dummy","password":"dummy"}'
+    headers:
+      User-Agent:
+      - fog-core/1.43.0
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: 
+    headers:
+      Date:
+      - Wed, 12 Oct 2016 13:38:03 GMT
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Type:
+      - application/json
+      X-UA-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - f944c468488502b0247a7d1fc9f6c0b3
+      X-Runtime:
+      - '0.020059'
+      X-Rack-Cache:
+      - invalidate, pass
+      Content-Length:
+      - '28'
+      Set-Cookie:
+      - rack.session=DUMMYBAh7B0kiD3Nlc3Npb25faWsdfhrZFVEkiRTM0YjAzYmVkZGJlNjc3NTYwODky%0AY2U4YzllNWUzYjM3ZjJjYjI5ZWFkMzBsdffdfsWMwOTg2MTc5YWI1NTRmNWEG%0AOwBGSSIMdXNlfdsZAY7AEZpAvkB%0A--691ce0965f6e0e5ad9fsddca271f2ba5e43fsd57e;
+        path=/api; expires=Wed, 12-Oct-2016 10:51:49 GMT; HttpOnly; secure, _session_id=34b03beddbe6775fsd2ce8c9e5e3b37f2cbfds0a4fdec0986asdaf5a;
+        path=/api; expires=Wed, 12-Oct-2016 10:51:49 GMT; HttpOnly; secure
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"401 Unauthorized"}'
+    http_version: 
+  recorded_at: Wed, 12 Oct 2016 13:38:03 GMT
+recorded_with: VCR 3.0.1
