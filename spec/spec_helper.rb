@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
-require 'fog/ukclouder'
+require 'fog/ukcloud'
 require 'vcr'
 
 VCR.configure do |c|
