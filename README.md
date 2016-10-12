@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/UKCloud/fog-ukcloud.svg?branch=master)](https://travis-ci.org/UKCloud/fog-ukcloud)
+
+
 # UKCloud Portal API Client
 
 ## Introduction
