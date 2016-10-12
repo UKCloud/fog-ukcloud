@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/UKCloud/fog-ukcloud.svg?branch=master)](https://travis-ci.org/UKCloud/fog-ukcloud)
+[![Gem Version](https://badge.fury.io/rb/fog-ukcloud.svg)](http://badge.fury.io/rb/fog-ukcloud)
 
 
 # UKCloud Portal API Client
